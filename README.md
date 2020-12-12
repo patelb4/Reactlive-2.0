@@ -27,12 +27,8 @@ npm run client
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-## App Info
+## Run on Heroku
+Live version deployed at [heroku](https://reactjs-calculator-live.herokuapp.com//)
 
 ### Version
-
-1.0.0
-
-### License
-
-This project is licensed under the MIT License
+2.0
