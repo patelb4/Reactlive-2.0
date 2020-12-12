@@ -1,0 +1,52 @@
+.result {
+  height: 60px;
+  background-color: #252525;
+  color: white;
+  width: 100%;
+}
+
+.result p {
+  font-size: 40px;
+  margin: 5px;
+  padding: 8px;
+}
+
+.calculator-body {
+  max-width: 400px;
+  margin: auto;
+}
+
+.button {
+  display: block;
+  background-color: #fdfdfd;
+  border: 1px solid;
+}
+
+button {
+  width: 22%;
+  height: 60px;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: none !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none !important;
+  border-radius: 0.25rem;
+}
