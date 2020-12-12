@@ -66,7 +66,7 @@ class App extends Component {
         } catch (e) {
             this.setState({
                 result: "error"
-            })
+         })
 
         }
     };
@@ -86,26 +86,26 @@ class App extends Component {
     render() {
         
         if (!sessionStorage.getItem("userData")) {
-            return (
-                <div>
-                    <div className="calculator-body">
-                        <h1 style={{textAlign: "center",marginTop: "80px"}}>Login Page</h1>
-                        <LoginComponent/>
-                    </div>
-                </div>
-            )
-        }
+           return (
+            <div>
+             <div className="calculator-body">
+                <h1 style={{textAlign: "center",marginTop: "80px"}}>Login Page</h1>
+                <LoginComponent/>
+               </div>
+             </div>
+       )
+   }
 
         return (
-            <div>
-                <div className="calculator-body">
-                    <h1 style={{textAlign: "center",marginTop: "40px"}}>Calculator</h1>
-                    <ResultComponent result={this.state.result}/>
-                    <KeyPadComponent onClick={this.onClick}/>
+         <div>
+           <div className="calculator-body">
+          <h1 style={{textAlign: "center",marginTop: "40px"}}>Calculator</h1>
+           <ResultComponent result={this.state.result}/>
+          <KeyPadComponent onClick={this.onClick}/>
                 </div>
             </div>
-        );
-    }
+       );
+   }
 }
 
 export default App;
