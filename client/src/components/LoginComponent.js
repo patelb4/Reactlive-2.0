@@ -81,23 +81,22 @@ class LoginComponent extends Component {
     }
 
     return (
-      <div className="app flex-row align-items-center bg-white">
-        <Container>
-          <Row className="justify-content-center">
-            <Col md="12" className="text-center">
-              <CardGroup>
-                <Card className="p-1">
-                  <CardBody>
-                    <p className="text-muted">Sign in to your account</p>
-                    <InputGroup className="mb-3 mt-3">
-                      <Input
-                        type="text"
-                        name="username"
-                        id="username"
-                        placeholder="Username"
-                        value={username}
-                        onChange={e => {
-                          this.handleChange(e);
+           <div className="app flex-row align-items-center bg-white">
+           <Container>
+           <Row className="justify-content-center">
+          <Col md="12" className="text-center">
+           <CardGroup>
+           <Card className="p-1">
+           <CardBody>
+           <p className="text-muted">Sign in to your account</p>               <InputGroup className="mb-3 mt-3">
+             <Input
+             type="text"
+             name="username"
+              id="username"
+              placeholder="Username"
+              value={username}
+               onChange={e => {
+               this.handleChange(e);
                         }}
                       />
                     </InputGroup>
@@ -111,7 +110,7 @@ class LoginComponent extends Component {
                         onChange={e => this.handleChange(e)}
                       />
                     </InputGroup>
-                    <Row>
+                       <Row>
                       <Col xs="12">
                         <Button
                           style={{width: "90px", height: "50px"}}
@@ -121,13 +120,13 @@ class LoginComponent extends Component {
                         >
                           Login
                         </Button>
-                      </Col>
-                    </Row>
-                  </CardBody>
-                </Card>
-              </CardGroup>
-            </Col>
-          </Row>
+                        </Col>
+                        </Row>
+                        </CardBody>
+                 <      /Card>
+                       </CardGroup>
+                       </Col>
+                       </Row>
           <Modal
             isOpen={this.state.modal}
             toggle={this.toggle}
@@ -145,10 +144,10 @@ class LoginComponent extends Component {
             <ModalFooter>
               <Button onClick={this.handleClose} color="info">
                 Ok
-              </Button>
-            </ModalFooter>
-          </Modal>
-        </Container>
+        </Button>
+        </ModalFooter>
+        </Modal>
+       </Container>
       </div>
     );
   }
